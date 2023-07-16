@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Vergi Hesaplama</h1>
+    </header>
+    <main>
+        <div class="vergi_hesaplama">
+            <p>Vergi Oranını Seçiniz...</p>
+            <div class="oran">
+                <div class="oran_%1 box " onclick="oran_esitle('1')" >%1</div>
+                <div class="oran_%8 box " onclick="oran_esitle('8')">%8</div>
+                <div class="oran_%18 box " onclick="oran_esitle('18')">%18</div>
+                <div class="oran_gir box" onclick="oran_esitle()">Yüzde gir</div>
+            </div>
+
+            <div class="form">
+                <form>
+                    <div class="first-line">
+                        <label for="vergi_orani"> Vergi Oranı : </label>
+                        <input id="vergi_orani"  type="number">
+                    </div>
+                    <div class="second-line">
+                        <label for="tutar"> Tutar : </label>
+                        <input id="tutar"  type="number"> 
+                    </div>
+                </form>
+            </div>
+
+            <div class="vergi">
+                 <button class="vergi_dahil" onclick="hesapla()">Vergi Dahil</button>
+              <button class="vergi_haric" onclick="vergi_haric()">Vergi Haric </button>
+            </div>
+
+            <div class="toplam">
+                
+                <div class="ara_toplam">
+                    <label for="ara_toplam"> Ara Toplam : </label> <!-- yazı için -->
+                    <input id="ara_toplam"  type="number"disabled><!-- değeri girebilmek için -->
+                </div>
+                <div class="vergi">
+                    <label for="vergi"> Vergi : </label>
+                    <input id="vergi"  type="number"disabled>  <!-- kullanıcı deger girmesin diye -->
+                </div>
+                <div class="genel_toplam">
+                    <label for="genel_toplam"> Genel Toplam : </label>
+                    <input id="genel_toplam"  type="number"disabled>
+                </div>
+            </div>
+        </div>
+
+    </main>
+
+    <script src="index.js" ></script>
+</body>
+</html>

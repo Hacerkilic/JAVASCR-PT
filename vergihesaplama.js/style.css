@@ -1,0 +1,37 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+header{
+    background-color: red;
+    color: white;
+    width: 100%;
+}
+
+
+main{
+    padding: 2rem 2rem;
+}
+
+.oran{
+    display: flex;
+    border: 2px solid black;
+    border-radius:3px ;
+    color: black;
+    margin-top:1rem ;
+    margin-bottom: 1rem;
+    
+}
+
+.box{
+    width: 25%;
+    border-right: 2px solid black;
+    text-align: center;
+    cursor: pointer;
+}
+
+.box.clicked {
+    background-color: yellow;
+    color: black;
+}
